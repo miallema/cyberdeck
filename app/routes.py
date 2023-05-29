@@ -4,6 +4,10 @@ from app import app
 @app.route('/')
 @app.route('/index')
 def index():
+    return render_template('index.html', title='cyberdeck.ch')
+
+@app.route('/software')
+def software():
     posts = [
         {
             'subject': {'tag': 'cyberdeck'},
@@ -22,4 +26,4 @@ def index():
             'body': 'certbot.eff.org'
         },
     ]
-    return render_template('index.html', title='cyberdeck.ch', posts=posts)
+    return render_template('software.html', title='cyberdeck.ch', posts=posts)
