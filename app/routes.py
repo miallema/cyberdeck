@@ -1,3 +1,4 @@
+from flask import render_template
 from app import app
 
 @app.route('/')
@@ -6,19 +7,19 @@ def index():
     posts = [
         {
             'subject': {'tag': 'cyberdeck'},
-            'body': 'Check out pysdr.org'
+            'body': 'pysdr.org'
         },
         {
             'subject': {'tag': 'cyberdeck'},
-            'body': 'Check out flask.palletsprojects.com'
+            'body': 'flask.palletsprojects.com'
         },
         {
             'subject': {'tag': 'cyberdeck'},
-            'body': 'Check out wireguard.com'
+            'body': 'wireguard.com'
         },
         {
             'subject': {'tag': 'cyberdeck'},
-            'body': 'Check out certbot.eff.org'
+            'body': 'certbot.eff.org'
         },
     ]
     return render_template('index.html', title='cyberdeck.ch', posts=posts)
