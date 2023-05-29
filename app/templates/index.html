@@ -1,0 +1,14 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Communication Systems Engineering</title>
+        {% else %}
+        <title>Welcome to cyberdeck.ch</title>
+        {% endif %}
+    </head>
+    <body>
+        {% for post in posts %}
+        <div><p>{{ post.subject.tag }}: <b>{{ post.body }}</b></p></div>
+        {% endfor %}
+    </body>
+</html>
