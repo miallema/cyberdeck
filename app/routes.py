@@ -10,7 +10,7 @@ def index():
         },
         {
             'subject': {'tag': 'cyberdeck'},
-            'body': 'Check out blog.miguelgrinberg.com'
+            'body': 'Check out flask.palletsprojects.com'
         },
         {
             'subject': {'tag': 'cyberdeck'},

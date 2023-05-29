@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Communication Systems Engineering</title>
+        {% else %}
+        <title>Welcome to cyberdeck.ch</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>Microblog: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
+
