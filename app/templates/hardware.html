@@ -3,6 +3,6 @@
 {% block content %}
 The rapid progress in information technology hardware has created a market for affordable and configurable hardware:
     {% for post in posts %}
-    <div><p style="font-size: 18px; margin-left: 50px;">{{ post.body }}</p></div>
+    <div><p style="font-size: 18px; margin-left: 50px;">- {{ post.body }}</p></div>
     {% endfor %}
 {% endblock %}

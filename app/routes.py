@@ -6,8 +6,23 @@ from app import app
 def index():
     return render_template('index.html', title='cyberdeck.ch')
 
+@app.route('/personal')
+def personal():
+    posts = [
+        {
+            'subject': {'tag': 'cyberdeck'},
+            'body': 'nts.live'
+        },
+         {
+            'subject': {'tag': 'cyberdeck'},
+            'body': 'Alastair Reynolds'
+        },
+    ]
+    return render_template('personal.html', title='cyberdeck.ch', posts=posts)
+
+
 @app.route('/hardware')
-def software():
+def hardware():
     posts = [
         {
             'subject': {'tag': 'cyberdeck'},
