@@ -6,6 +6,40 @@ from app import app
 def index():
     return render_template('index.html', title='cyberdeck.ch')
 
+@app.route('/goal')
+def goal():
+    posts = [
+        {
+            'subject': {'tag': 'cyberdeck'},
+            'body': 'Amateur radio license'
+        },
+         {
+            'subject': {'tag': 'cyberdeck'},
+            'body': 'Send bits from PlutoSDR to RTL-SDR'
+        },
+        {
+            'subject': {'tag': 'cyberdeck'},
+            'body': 'Write transmitted bytes to memory'
+        },
+        {
+            'subject': {'tag': 'cyberdeck'},
+            'body': 'TCP/IP networking'
+        },
+        {
+            'subject': {'tag': 'cyberdeck'},
+            'body': 'LTE'
+        },
+        {
+            'subject': {'tag': 'cyberdeck'},
+            'body': 'Satellite reception'
+        },
+        {
+            'subject': {'tag': 'cyberdeck'},
+            'body': 'Explore turbo and LDPC codes'
+        },
+    ]   
+    return render_template('goal.html', title='cyberdeck.ch')
+
 @app.route('/personal')
 def personal():
     posts = [

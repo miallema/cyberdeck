@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+The goal is to build a cyberdeck that connects to existing mobile telecommunications infrastructure using software defined radio (SDR). Using some linux device with an SDR and a valid SIM Card should allow the usage of telecommunications infrastructure such as LTE.
+    {% for post in posts %}
+    <div><p style="font-size: 18px; margin-left: 50px;">- {{ post.body }}</p></div>
+    {% endfor %}
+{% endblock %}
