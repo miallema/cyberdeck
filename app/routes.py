@@ -38,7 +38,7 @@ def goal():
             'body': 'Explore turbo and LDPC codes'
         },
     ]   
-    return render_template('goal.html', title='cyberdeck.ch')
+    return render_template('goal.html', title='cyberdeck.ch', posts=posts)
 
 @app.route('/personal')
 def personal():
