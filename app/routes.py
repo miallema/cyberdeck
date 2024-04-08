@@ -53,3 +53,15 @@ def software():
         {"subject": {"tag": "cyberdeck"}, "body": "certbot.eff.org"},
     ]
     return render_template("software.html", title="cyberdeck.ch", posts=posts)
+
+
+@app.route("/services")
+def services():
+    posts = [
+        {"subject": {"tag": "cyberdeck"}, "body": "proton.me"},
+        {"subject": {"tag": "cyberdeck"}, "body": "infomaniak.com"},
+        {"subject": {"tag": "cyberdeck"}, "body": "cloudflare.com"},
+        {"subject": {"tag": "cyberdeck"}, "body": "swisscom.ch"},
+    ]
+    return render_template("services.html", title="cyberdeck.ch", posts=posts)
+

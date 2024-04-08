@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+The fllowing services are used:
+    {% for post in posts %}
+    <div><p style="font-size: 18px; margin-left: 50px;">- {{ post.body }}</p></div>
+    {% endfor %}
+{% endblock %}
