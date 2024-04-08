@@ -39,6 +39,7 @@ def hardware():
         {"subject": {"tag": "cyberdeck"}, "body": "GPD MicroPC"},
         {"subject": {"tag": "cyberdeck"}, "body": "Raspberry Pi"},
         {"subject": {"tag": "cyberdeck"}, "body": "RTL-SDR"},
+        {"subject": {"tag": "cyberdeck"}, "body": "Swisscom Internet-Box 3"},
     ]
     return render_template("hardware.html", title="cyberdeck.ch", posts=posts)
 
@@ -49,9 +50,14 @@ def software():
         {"subject": {"tag": "cyberdeck"}, "body": "pysdr.org"},
         {"subject": {"tag": "cyberdeck"}, "body": "gnuradio.org"},
         {"subject": {"tag": "cyberdeck"}, "body": "ubuntu-mate.org"},
-        {"subject": {"tag": "cyberdeck"}, "body": "flask.palletsprojects.com"},
+        {"subject": {"tag": "cyberdeck"}, "body": "blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world"},
         {"subject": {"tag": "cyberdeck"}, "body": "wireguard.com"},
+        {"subject": {"tag": "cyberdeck"}, "body": "pivpn.io"},
         {"subject": {"tag": "cyberdeck"}, "body": "certbot.eff.org"},
+        {"subject": {"tag": "cyberdeck"}, "body": "pi-hole.net"},
+        {"subject": {"tag": "cyberdeck"}, "body": "cloudflare.com"},
+        {"subject": {"tag": "cyberdeck"}, "body": "infomaniak.ch"},
+        {"subject": {"tag": "cyberdeck"}, "body": "proton.me"},
     ]
     return render_template("software.html", title="cyberdeck.ch", posts=posts)
 
