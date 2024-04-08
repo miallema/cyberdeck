@@ -11,13 +11,9 @@ def index():
 @app.route("/goal")
 def goal():
     posts = [
-        {"subject": {"tag": "cyberdeck"}, "body": "Amateur radio license"},
-        {"subject": {"tag": "cyberdeck"}, "body": "Send bits from PlutoSDR to RTL-SDR"},
-        {"subject": {"tag": "cyberdeck"}, "body": "Write transmitted bytes to memory"},
-        {"subject": {"tag": "cyberdeck"}, "body": "TCP/IP networking"},
-        {"subject": {"tag": "cyberdeck"}, "body": "LTE"},
-        {"subject": {"tag": "cyberdeck"}, "body": "Satellite reception"},
-        {"subject": {"tag": "cyberdeck"}, "body": "Explore turbo and LDPC codes"},
+        {"subject": {"tag": "cyberdeck"}, "body": "Deploy and test a software radio receiver on PlutoSDR following the textbook 'software receiver design' by Sethares et al. but implementing it in python using pysdr.org."},
+        {"subject": {"tag": "cyberdeck"}, "body": "Build tranceiver using GNU Radio."},
+        {"subject": {"tag": "cyberdeck"}, "body": "Interact with LTE network."},
     ]
     return render_template("goal.html", title="cyberdeck.ch", posts=posts)
 
@@ -47,17 +43,12 @@ def hardware():
 @app.route("/software")
 def software():
     posts = [
-        {"subject": {"tag": "cyberdeck"}, "body": "pysdr.org"},
         {"subject": {"tag": "cyberdeck"}, "body": "gnuradio.org"},
         {"subject": {"tag": "cyberdeck"}, "body": "ubuntu-mate.org"},
-        {"subject": {"tag": "cyberdeck"}, "body": "blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world"},
+        {"subject": {"tag": "cyberdeck"}, "body": "flask.palletsprojects.com"},
         {"subject": {"tag": "cyberdeck"}, "body": "wireguard.com"},
-        {"subject": {"tag": "cyberdeck"}, "body": "pivpn.io"},
         {"subject": {"tag": "cyberdeck"}, "body": "certbot.eff.org"},
         {"subject": {"tag": "cyberdeck"}, "body": "pi-hole.net"},
-        {"subject": {"tag": "cyberdeck"}, "body": "cloudflare.com"},
-        {"subject": {"tag": "cyberdeck"}, "body": "infomaniak.ch"},
-        {"subject": {"tag": "cyberdeck"}, "body": "proton.me"},
     ]
     return render_template("software.html", title="cyberdeck.ch", posts=posts)
 
