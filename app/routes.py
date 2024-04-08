@@ -26,7 +26,8 @@ def goal():
 def personal():
     posts = [
         {"subject": {"tag": "cyberdeck"}, "body": "nts.live"},
-        {"subject": {"tag": "cyberdeck"}, "body": "Alastair Reynolds"},
+        {"subject": {"tag": "cyberdeck"}, "body": "interzone.press"},
+        {"subject": {"tag": "cyberdeck"}, "body": "monde-diplomatique.fr"},
     ]
     return render_template("personal.html", title="cyberdeck.ch", posts=posts)
 
