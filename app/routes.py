@@ -24,6 +24,8 @@ def personal():
         {"subject": {"tag": "cyberdeck"}, "body": "nts.live"},
         {"subject": {"tag": "cyberdeck"}, "body": "interzone.press"},
         {"subject": {"tag": "cyberdeck"}, "body": "monde-diplomatique.fr"},
+        {"subject": {"tag": "cyberdeck"}, "body": "usenix.org/system/files/1311_05-08_mickens.pdf"},
+        {"subject": {"tag": "cyberdeck"}, "body": "youtube.com/watch?v=_W7wqQwa-TU"},
     ]
     return render_template("personal.html", title="cyberdeck.ch", posts=posts)
 
