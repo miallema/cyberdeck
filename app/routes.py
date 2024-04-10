@@ -62,6 +62,7 @@ def services():
         {"subject": {"tag": "cyberdeck"}, "body": "infomaniak.com"},
         {"subject": {"tag": "cyberdeck"}, "body": "cloudflare.com"},
         {"subject": {"tag": "cyberdeck"}, "body": "swisscom.ch"},
+        {"subject": {"tag": "cyberdeck"}, "body": "bitwarden.com"},
     ]
     return render_template("services.html", title="cyberdeck.ch", posts=posts)
 
