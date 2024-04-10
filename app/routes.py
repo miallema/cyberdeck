@@ -11,9 +11,9 @@ def index():
 @app.route("/goal")
 def goal():
     posts = [
-        {"subject": {"tag": "cyberdeck"}, "body": "Deploy and test a software radio receiver on PlutoSDR following the textbook 'software receiver design' by Sethares et al. but implementing it in python using pysdr.org."},
-        {"subject": {"tag": "cyberdeck"}, "body": "Build tranceiver using GNU Radio."},
-        {"subject": {"tag": "cyberdeck"}, "body": "Interact with LTE network."},
+        {"subject": {"tag": "cyberdeck"}, "body": "Implement 'software receiver design' by Sethares et al. on PlutSDR with pysdr.org"},
+        {"subject": {"tag": "cyberdeck"}, "body": "Build tranceiver using GNU Radio"},
+        {"subject": {"tag": "cyberdeck"}, "body": "Interact with LTE network"},
     ]
     return render_template("goal.html", title="cyberdeck.ch", posts=posts)
 
